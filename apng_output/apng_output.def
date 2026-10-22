@@ -1,0 +1,3 @@
+LIBRARY apng_output
+EXPORTS
+	GetOutputPluginTable

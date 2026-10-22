@@ -1,0 +1,3 @@
+#define IDC_EDIT_FPS   1001
+#define IDC_EDIT_LOOP  1002
+#define IDC_EDIT_LEVEL 1003

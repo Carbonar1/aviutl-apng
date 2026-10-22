@@ -1,0 +1,18 @@
+#pragma code_page(65001)
+#include <windows.h>
+#include "apng_output.h"
+
+CONFIG DIALOG 0, 0, 220, 100
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "APNG出力の設定"
+FONT 9, "MS UI Gothic"
+BEGIN
+    LTEXT     "フレームレート(fps) ※空欄=プロジェクトの設定を使う",-1,7,7,206,10
+    EDITTEXT  IDC_EDIT_FPS,7,18,90,12,ES_AUTOHSCROLL
+    LTEXT     "繰り返し回数 (0=無限ループ)",-1,7,36,206,10
+    EDITTEXT  IDC_EDIT_LOOP,7,47,90,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT     "圧縮率 (0=最速 / 9=最高圧縮)",-1,7,65,206,10
+    EDITTEXT  IDC_EDIT_LEVEL,7,76,90,12,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON "OK",IDOK,120,80,40,14
+    PUSHBUTTON    "キャンセル",IDCANCEL,165,80,48,14
+END
